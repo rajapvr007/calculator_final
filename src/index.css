@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+/* @tailwind utilities; */
+
+@layer components {
+  .container {
+    @apply w-[100%] h-[100vh] flex justify-center items-center bg-red-100;
+  }
+  .calculator {
+    @apply bg-white rounded p-3;
+    /* w-[400px] h-[600px] bg-white rounded-xl shadow-xl flex justify-between items-center */
+  }
+  form input {
+    @apply outline-none border-none text-2xl  p-4 w-[60px] h-[60px] text-center bg-gray-600 cursor-pointer;
+  }
+  .btn {
+    @apply rounded bg-gray-200 m-1 hover:bg-gray-500 ;
+  }
+  .btn1 {
+    @apply rounded bg-gray-400 m-1 w-[265px] text-end;
+  }
+  .btn-eql {
+    @apply rounded bg-gray-200 m-1 w-[128px];
+  }
+}
